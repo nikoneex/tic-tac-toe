@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@200;400&display=swap');
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+}
+
+#gameboard {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 32%;
+    height: 33%;
+    border: 2px solid black;
+    margin: 0;
+    font-size: 8em;
+    text-align: center;
+    display: block;
+    /* background-color: white; */
+}
+
+.box:hover {
+    cursor: pointer;
+    /* background-color: rgba(black, black, black, 0.2); */
+}
+
+.box > .fa-circle-notch {
+    color: blue;
+}
+
+.box > .fa-times {
+    color: red;
+}
+
+.box:nth-of-type(1){
+    border-top: none;
+    border-left: none;
+}
+.box:nth-of-type(2){
+    border-top: none;
+}
+.box:nth-of-type(3){
+    border-top: none;
+    border-right: none;
+}
+.box:nth-of-type(4){
+    border-left: none;
+}
+.box:nth-of-type(6){
+    border-right: none;
+}
+.box:nth-of-type(7){
+    border-left: none;
+    border-bottom: none;
+}
+.box:nth-of-type(8){
+    border-bottom: none;
+}
+.box:nth-of-type(9){
+    border-bottom: none;
+    border-right: none;
+}
+
+#players{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.player{
+    width: 20%;
+    box-sizing: border-box;
+    margin: 0 20px;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+
+.player > span:nth-of-type(2){
+    display: block;
+    width: 100%;
+}
+
+.playerTurn {
+    opacity: 1;
+}
+
+
+.playerIcon {
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
